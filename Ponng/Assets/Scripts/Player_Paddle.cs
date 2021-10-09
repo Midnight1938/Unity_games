@@ -8,10 +8,10 @@ public class Player_Paddle : Paddle
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.RightArrow))
         {
             _direction = Vector2.up;
-        } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.LeftArrow))
         {
             _direction = Vector2.down;
         } else { _direction = Vector2.zero; }
